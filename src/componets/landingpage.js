@@ -8,7 +8,7 @@ class Landing extends Component{
                 <Grid className='landing-grid'>
                     <Cell col={12}>
                         <img
-                            src="https://jvtea44x1mh3gctjp1q2nymo-wpengine.netdna-ssl.com/wp-content/uploads/2016/01/Real-Madrid-star-Cristiano-Ronaldo-will-open-his-CR7-footwear-brand-in-Alexandria-1200x630.jpg"
+                            src="./IMG_1143.jpeg"
                             alt="selfie"
                             className="selfie-img"
                         />
