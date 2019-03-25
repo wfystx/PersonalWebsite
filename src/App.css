@@ -32,8 +32,8 @@
   }
 }
 .selfie-img {
-  height: 250px;
-  padding-top: 5em;
+  height: 650px;
+  padding-top: 6em;
 }
 
 .header-color{
@@ -43,9 +43,9 @@
 
 }
 .landing-grid{
-  background: #000000;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #000000;
+  background: -webkit-linear-gradient(to left, #434343, #000000);
+  background: linear-gradient(to left, #434343, #000000);
   text-align: center;
   position: fixed;
   top: 0;
@@ -55,11 +55,12 @@
 }
 
 .banner-text {
-  background-color: black;
+
   opacity: .8;
-  width: 75%;
+  width: 100%;
   margin: auto;
   border-radius: 10px;
+  padding-top: 7em;
 }
 .banner-text h1 {
   font-size: 66px;
@@ -87,4 +88,7 @@
   color: white;
   font-size: 5em;
   padding: 8px;
+}
+.download-resume{
+  border-radius: 3px;
 }
