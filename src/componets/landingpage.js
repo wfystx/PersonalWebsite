@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
-import {Cell, Grid} from "react-mdl";
-
 import resume from './FuyaoWang.pdf';
-import landingbackground from './landingbackground.jpg';
-var back = {
-    width: "100%",
-    margin: 'auto',
-};
+
 class Landing extends Component{
     render(){
         return(
@@ -37,7 +31,7 @@ class Landing extends Component{
                             <ul className="nav navbar-nav">
                                 <li className="hidden"><a href="#page-top"></a></li>
                                 <li><a className="page-scroll" href="#about">About</a></li>
-                                <li><a className="page-scroll" href="#portfolio">Portfolio</a></li>
+                                <li><a className="page-scroll" href="#portfolio">Projects</a></li>
                                 <li><a className="page-scroll" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -64,17 +58,19 @@ class Landing extends Component{
                                     I also served for military as a soldier for 2 years. This experience is really precious
                                     for me because it taught me how to be a man. I must face a challenging future with
                                     unfamiliar things, having the ability of beating them is the best way to win the future.</p>
-                                <a href="/aboutme" className="btn btn-default btn-lg page-scroll">My Resume</a>
+                                <a href={resume} download="FuyaoWang.pdf" className="btn btn-default btn-lg page-scroll">My Resume</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            
             <div id="portfolio">
                 <div className="container">
                     <div className="section-title text-center center">
-                        <h2>Portfolio</h2>
+                        <h2>Projects</h2>
                     </div>
+                    {/*
                     <div className="categories">
                         <ul className="cat">
                             <li>
@@ -88,11 +84,13 @@ class Landing extends Component{
                         </ul>
                         <div className="clearfix"></div>
                     </div>
+                    */}
                     <div className="row">
                         <div className="portfolio-items">
                             <div className="col-sm-6 col-md-3 col-lg-3 graphic">
                                 <div className="portfolio-item">
-                                    <div className="hover-bg"><a href="img/portfolio/01-large.jpg" title="Project Title"
+
+                                    <div className="hover-bg"><a  target="_blank" href="/contact" title="Intelligent Lab"
                                                                  data-lightbox-gallery="gallery1">
                                         <div className="hover-text">
                                             <h4>Project Title</h4>
@@ -134,6 +132,7 @@ class Landing extends Component{
                                              alt="Project Title"/> </a></div>
                                 </div>
                             </div>
+                            {/*
                             <div className="col-sm-6 col-md-3 col-lg-3 illustration">
                                 <div className="portfolio-item">
                                     <div className="hover-bg"><a href="img/portfolio/05-large.jpg" title="Project Title"
@@ -145,6 +144,7 @@ class Landing extends Component{
                                              alt="Project Title"/> </a></div>
                                 </div>
                             </div>
+
                             <div className="col-sm-6 col-md-3 col-lg-3 photography">
                                 <div className="portfolio-item">
                                     <div className="hover-bg"><a href="img/portfolio/06-large.jpg" title="Project Title"
@@ -167,6 +167,7 @@ class Landing extends Component{
                                              alt="Project Title"/> </a></div>
                                 </div>
                             </div>
+
                             <div className="col-sm-6 col-md-3 col-lg-3 graphic">
                                 <div className="portfolio-item">
                                     <div className="hover-bg"><a href="img/portfolio/08-large.jpg" title="Project Title"
@@ -200,6 +201,7 @@ class Landing extends Component{
                                              alt="Project Title"/> </a></div>
                                 </div>
                             </div>
+
                             <div className="col-sm-6 col-md-3 col-lg-3 photography">
                                 <div className="portfolio-item">
                                     <div className="hover-bg"><a href="img/portfolio/11-large.jpg" title="Project Title"
@@ -222,6 +224,7 @@ class Landing extends Component{
                                              alt="Project Title"/> </a></div>
                                 </div>
                             </div>
+                            */}
                         </div>
                     </div>
                 </div>
@@ -229,7 +232,7 @@ class Landing extends Component{
             <div id="contact" className="text-center">
                 <div className="container">
                     <div className="section-title center">
-                        <h2>Get In Touch</h2>
+                        <h2>Contact Me</h2>
                     </div>
                     <div className="col-md-8 col-md-offset-2">
                         <form name="sentMessage" id="contactForm" noValidate>
@@ -263,7 +266,7 @@ class Landing extends Component{
                                     <i className="fa fa-github-square" aria-hidden="true" /></a></li>
                                 <li><a href="https://www.linkedin.com/in/fuyaowang" rel="noopener noreferrer" target="_blank">
                                     <i className="fa fa-linkedin-square" aria-hidden="true" /></a></li>
-                                
+
                             </ul>
                         </div>
                     </div>
@@ -272,7 +275,10 @@ class Landing extends Component{
             <div id="footer">
                 <div className="container text-center">
                     <div className="fnav">
-                        <p>Fuyao Wang</p>
+                        <p>Fuyao Wang  <i className="far fa-envelope"> fuyao@bu.edu</i>
+
+
+                        </p>
                     </div>
                 </div>
             </div>
